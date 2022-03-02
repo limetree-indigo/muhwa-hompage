@@ -6,6 +6,7 @@ from django.urls import reverse
 
 class Coffee(models.Model):
   title = models.CharField(max_length=100)
+  sub_cate = models.CharField(max_length=100, default='')
   photo = models.ImageField(upload_to='coffee/%Y/%m/%d', default='coffee/no_image.png')
   
   desc = models.TextField()
