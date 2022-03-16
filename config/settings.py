@@ -23,10 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '#_37p6h2b-$3vm&2swcaq^n6$+@wd@a3)#au)lalt#nud7jb-#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['limetree.pythonanywhere.com', '127.0.0.1', ]
-
 
 # Application definition
 
