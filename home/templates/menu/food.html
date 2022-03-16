@@ -7,5 +7,15 @@
 {% endblock %}
 
 {% block contents %}
-<h2>FOOD</h2>
+<div class="container"> 
+  <h3>FOOD</h3>
+  <div class="row"> 
+    {% for food in food_list %}    
+      <div class="col col-sm-3">
+        <img src="{{food.photo.url}}" class="img-thumbnail" alt="">
+        <p class="text-center">{{food.title}}</p>
+      </div>    
+    {% endfor %}
+  </div> 
+</div>
 {% endblock %}
